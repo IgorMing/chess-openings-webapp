@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Giuoco piano",
+    "aka": ["Italian Game"],
+    "white": ["e4", "Nf3", "Bc4"],
+    "black": ["e5", "Nc6"]
+  },
+  {
+    "name": "Ruy Lopez",
+    "aka": ["Spanish Game"],
+    "white": ["e4", "Nf3", "Bb5"],
+    "black": ["e5", "Nc6"]
+  }
+]
