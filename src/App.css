@@ -1,0 +1,11 @@
+html,
+body,
+#root,
+.App {
+  display: flex;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}

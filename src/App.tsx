@@ -1,10 +1,14 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import './App.css';
+import { theme } from './configs/styled-components/theme';
+import Game from './pages/Game';
 
 function App(): React.ReactElement {
   return (
-    <div className="App">
-      <span>Home screen</span>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Game />
+    </ThemeProvider>
   );
 }
 
