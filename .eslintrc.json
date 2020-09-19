@@ -20,7 +20,8 @@
   },
   "plugins": ["react", "@typescript-eslint", "import"],
   "rules": {
-    "import/no-unresolved": "error"
+    "import/no-unresolved": "error",
+    "@typescript-eslint/ban-ts-comment": "warn"
   },
   "settings": {
     "react": {

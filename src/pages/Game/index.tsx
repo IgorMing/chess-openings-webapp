@@ -1,17 +1,28 @@
-import React, { useEffect } from 'react';
+import Chess, { MoveProps } from 'chess.js';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useTypedSelector } from '../../reducers';
-import { setMove } from './duck';
 import Styled, { Chessboard } from './styles';
 
 const Game: React.FC = () => {
-  const game = useTypedSelector((state) => state.game);
+  const [fen, setFen] = useState<string>('start');
+  // const game = useTypedSelector((state) => state.game);
   const dispatch = useDispatch();
+  // @ts-ignore
+  const [game] = useState(new Chess());
+
+  function onDrop(move: MoveProps) {
+    game.move({
+      from: move.sourceSquare,
+      to: move.targetSquare
+    });
+
+    const fen = game.fen();
+    setFen(fen);
+  }
 
   return (
     <Styled>
-      <button onClick={() => dispatch(setMove())}>click me</button>
-      <Chessboard position="start" />
+      <Chessboard position={fen} onDrop={onDrop} />
     </Styled>
   );
 };

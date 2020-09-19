@@ -3065,6 +3065,11 @@ chardet@^0.7.0:
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
 
+chess.js@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/chess.js/-/chess.js-0.11.0.tgz#e1802179b944eab5daf11b5d4bce08cdcadbeffa"
+  integrity sha512-yTpi6XbRMkBtnjSvbt6wEp9Y7JzhJl1MC3GNn67q5ClyccXxCRf5cMPSUg4OblrUapg1kLHm7WzxxEVp20NK1Q==
+
 chessboardjsx@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chessboardjsx/-/chessboardjsx-2.4.2.tgz#69b607f67a7bd8c66b86d7e33dfb631cd87f6533"
