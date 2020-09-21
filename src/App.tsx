@@ -1,6 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
+import './assets/fonts/Roboto-Regular.ttf';
 import './App.css';
 import { theme } from './configs/styled-components/theme';
 import Game from './pages/Game';

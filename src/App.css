@@ -4,8 +4,23 @@ body,
 .App {
   display: flex;
   height: 100%;
+  background-color: #21222b;
 }
 
 body {
   margin: 0;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: local('Roboto-Regular'),
+    url(./assets/fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+span,
+a,
+div,
+label {
+  font-family: Roboto-Regular;
+  color: white;
 }
