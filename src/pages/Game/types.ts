@@ -1,11 +1,14 @@
+import { ChessMoveProps } from 'chess.js';
+
 export const GameActions = {
   SET_WHITE_MOVE: 'GAME/SET_WHITE_MOVE',
+  SET_HISTORY: 'GAME/SET_HISTORY',
   SET_WHITE_OPENING: 'GAME/SET_WHITE_OPENING'
 };
 
 export enum COLOR {
-  WHITE = 'white',
-  BLACK = 'black'
+  WHITE = 'w',
+  BLACK = 'b'
 }
 
 interface Opening {
@@ -13,7 +16,7 @@ interface Opening {
 }
 
 export interface GameModuleState {
-  whiteHistory: Array<string>;
+  history: Array<ChessMoveProps>;
   whiteOpening?: Opening;
 }
 

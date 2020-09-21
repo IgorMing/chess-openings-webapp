@@ -5,8 +5,8 @@ declare module 'chess.js' {
     piece: string;
   }
 
-  interface MoveArgs {
-    captured: string;
+  interface ChessMoveProps {
+    captured?: string;
     color?: string;
     flags?: string;
     from: string;
@@ -17,7 +17,7 @@ declare module 'chess.js' {
   }
 
   export interface ChessProps {
-    move: (args: MoveArgs) => any;
+    move: (args: ChessMoveProps) => any;
     fen: (args?: any) => any;
   }
 }

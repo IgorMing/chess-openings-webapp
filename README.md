@@ -11,4 +11,8 @@ N = Knight
 R = Rook (Tower)
 no notation = Pawn
 
-> **TODO:** Move these notations for chess icons in the future.
+TODOs
+
+- [ ] Move these pieces from english notation to chess icons
+- [ ] Keep always in the end of the horizontal scroll _(into history exibition)_ check [this lib](https://www.npmjs.com/package/react-scroll), and the prop `isDynamic`
+- [ ] Show a modal with more details about that opening

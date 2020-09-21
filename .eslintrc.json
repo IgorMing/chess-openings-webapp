@@ -7,6 +7,7 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
     "prettier",
     "prettier/react"
   ],
@@ -21,6 +22,7 @@
   "plugins": ["react", "@typescript-eslint", "import"],
   "rules": {
     "import/no-unresolved": "error",
+    "react/prop-types": "off",
     "@typescript-eslint/ban-ts-comment": "warn"
   },
   "settings": {

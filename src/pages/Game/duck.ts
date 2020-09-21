@@ -1,7 +1,8 @@
+import { ChessMoveProps } from 'chess.js';
 import { COLOR, GameActions, GameModuleAction, GameModuleState } from './types';
 
 const INITIAL_STATE: GameModuleState = {
-  whiteHistory: [],
+  history: [],
   whiteOpening: undefined
 };
 
@@ -11,10 +12,10 @@ export default function reducer(
   action: GameModuleAction
 ): typeof INITIAL_STATE {
   switch (action.type) {
-    case GameActions.SET_WHITE_MOVE:
+    case GameActions.SET_HISTORY:
       return {
         ...state,
-        whiteHistory: [...state.whiteHistory, action.payload]
+        history: action.payload
       };
     default:
       return state;
@@ -26,5 +27,12 @@ export function setMove(color?: COLOR) {
   return {
     type: GameActions.SET_WHITE_MOVE,
     payload: 'e5'
+  };
+}
+
+export function setHistory(history: Array<ChessMoveProps>) {
+  return {
+    type: GameActions.SET_HISTORY,
+    payload: history
   };
 }

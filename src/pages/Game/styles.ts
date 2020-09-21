@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 import DefaultChessboard from 'chessboardjsx';
 
-console.log(window.screen.width);
-
 export default styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
   background-color: ${({ theme }) => theme.colors.primary};
+
+  section.board {
+    flex: 9;
+  }
 `;
 
 export const Chessboard = styled(DefaultChessboard).attrs({
