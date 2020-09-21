@@ -5,7 +5,7 @@ declare module 'chess.js' {
     piece: string;
   }
 
-  interface ChessMoveProps {
+  export interface ChessMoveProps {
     captured?: string;
     color?: string;
     flags?: string;
@@ -16,8 +16,9 @@ declare module 'chess.js' {
     to: string;
   }
 
+  // TODO: Check the possibility to make chessMoveProps interface dynamic regarding the requirement from the attributes
   export interface ChessProps {
-    move: (args: ChessMoveProps) => any;
+    move: (args: ChessMoveProps) => ChessMoveProps;
     fen: (args?: any) => any;
   }
 }
