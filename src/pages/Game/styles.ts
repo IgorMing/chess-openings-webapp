@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import DefaultChessboard from 'chessboardjsx';
+import styled from 'styled-components';
 
 export default styled.div`
   display: flex;

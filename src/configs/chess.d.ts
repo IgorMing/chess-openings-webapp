@@ -19,6 +19,6 @@ declare module 'chess.js' {
   // TODO: Check the possibility to make chessMoveProps interface dynamic regarding the requirement from the attributes
   export interface ChessProps {
     move: (args: ChessMoveProps) => ChessMoveProps;
-    fen: (args?: any) => any;
+    fen: (args?: unknown) => unkwnown;
   }
 }

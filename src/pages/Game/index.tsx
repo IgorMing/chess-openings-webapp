@@ -18,7 +18,6 @@ const Game: React.FC = () => {
   useEffect(() => {
     dispatch(setHistory(game.history({ verbose: true })));
   }, [dispatch, game]);
-  console.log(shownHistory);
 
   function saveNewLayout(move: ChessMoveProps) {
     if (move === null) {
