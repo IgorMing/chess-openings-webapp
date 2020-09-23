@@ -8,6 +8,13 @@ export function getHistoryByColor(color: COLOR) {
       .map((each) => each.san ?? '');
 }
 
+export function getHistory(state: RootState) {
+  const blackHistory = getHistoryByColor(COLOR.BLACK)(state);
+  const whiteHistory = getHistoryByColor(COLOR.WHITE)(state);
+
+  return { whiteHistory, blackHistory };
+}
+
 export function getFlatHistory(state: RootState): Array<string> {
   return state.game.history.map((each) => each.san ?? '');
 }

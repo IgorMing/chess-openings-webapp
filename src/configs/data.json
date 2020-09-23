@@ -1,0 +1,18 @@
+[
+  {
+    "eco": "C50–C54",
+    "name": "Giuoco piano",
+    "aka": ["Abertura Italiana"],
+    "white": ["e4", "Nf3", "Bc4"],
+    "black": ["e5", "Nc6"],
+    "origin": "Século 16"
+  },
+  {
+    "eco": "C60–C99",
+    "name": "Ruy Lopez",
+    "aka": ["Abertura Espanhola"],
+    "white": ["e4", "Nf3", "Bb5"],
+    "black": ["e5", "Nc6"],
+    "origin": 1561
+  }
+]

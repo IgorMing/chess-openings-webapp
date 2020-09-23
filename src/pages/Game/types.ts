@@ -1,9 +1,8 @@
 import { ChessMoveProps } from 'chess.js';
 
 export const GameActions = {
-  SET_WHITE_MOVE: 'GAME/SET_WHITE_MOVE',
-  SET_HISTORY: 'GAME/SET_HISTORY',
-  SET_WHITE_OPENING: 'GAME/SET_WHITE_OPENING'
+  SET_OPENING: 'GAME/SET_OPENING',
+  SET_HISTORY: 'GAME/SET_HISTORY'
 };
 
 export enum COLOR {
@@ -11,13 +10,19 @@ export enum COLOR {
   BLACK = 'b'
 }
 
-interface Opening {
+export interface Opening {
+  eco: string; // basically the ID (Encyclopedia of Chess Openings)
   name: string;
+  aka: string[];
+  white: string[];
+  black: string[];
+  description?: string;
+  origin?: number | string;
 }
 
 export interface GameModuleState {
-  history: Array<ChessMoveProps>;
-  whiteOpening?: Opening;
+  history: ChessMoveProps[];
+  openings: Opening[];
 }
 
 export interface GameModuleAction {

@@ -9,6 +9,7 @@ const History: React.FC<HistoryProps> = ({ data }) => {
   return (
     <Styled>
       <span>Histórico</span>
+      <hr />
       <section className="list-inline">
         {data.map((each, index) => (
           <div key={index} className="list-inline--item">
